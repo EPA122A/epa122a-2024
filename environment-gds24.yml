@@ -1,0 +1,40 @@
+name: gds24
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+
+  # Data Science / Statistics
+  - numpy<1.25.0         # Core numerical library for array operations
+  - pandas               # Powerful data manipulation and analysis tool
+  - statsmodels          # Statistical models and hypothesis testing
+  - scipy==1.8.0         # Scientific computations (includes stats, optimization)
+  - scikit-learn         # Machine learning algorithms and tools
+
+  # Visualization
+  - matplotlib           # Fundamental plotting library
+  - seaborn              # Statistical data visualization, built on top of matplotlib
+  - palettable           # Additional color palettes for matplotlib/seaborn
+  - ipywidgets           # Widgets for interactive controls in Jupyter notebooks
+
+  # Web Scraping
+  - requests             # Simple HTTP library for making API calls and web requests
+  - beautifulsoup4       # Parsing HTML and XML documents
+
+  # Geospatial Analysis
+  - geopandas            # Geospatial data handling (extends pandas for GIS)
+  - contextily           # Provides basemap tiles for plotting with geopandas
+  - rasterio             # Reading and writing raster datasets
+  - osmnx                # Downloading and analyzing street networks
+  - pysal                # Spatial analysis and statistics library
+  - splot                # Spatial plotting for PySAL
+  - mapclassify          # Classification schemes for choropleth mapping
+
+  # Interactive Environment
+  - jupyterlab           # JupyterLab interface for notebooks and code
+  - ipython              # Enhanced interactive Python shell
+
+  # Other
+  - pip
+  - pip:                  # Required for installing any additional pip-only packages
+    - git+https://github.com/EPA122A/epa122a-tools.git  # Lab data downloader
