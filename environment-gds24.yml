@@ -36,5 +36,3 @@ dependencies:
 
   # Other
   - pip
-  - pip:                  # Required for installing any additional pip-only packages
-    - git+https://github.com/EPA122A/epa122a-tools.git  # Lab data downloader
