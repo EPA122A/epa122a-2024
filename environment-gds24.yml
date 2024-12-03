@@ -29,7 +29,7 @@ dependencies:
   - pysal                # Spatial analysis and statistics library
   - splot                # Spatial plotting for PySAL
   - mapclassify          # Classification schemes for choropleth mapping
-  - esda==1.4.1          # Exploratory Spatial Data Analysis
+  - esda==2.5.1          # Exploratory Spatial Data Analysis
 
   # Interactive Environment
   - jupyterlab           # JupyterLab interface for notebooks and code
